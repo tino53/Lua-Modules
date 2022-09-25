@@ -90,6 +90,30 @@ function CustomInjector:parse(id, widgets)
 			table.insert(widgets, Title{name = '[[Oceania Draft League|Oceania Draft League]] History'})
 			table.insert(widgets, Center{content = {_args.history_odl}})
 		end
+		if not String.isEmpty(_args.history_irc) then
+			table.insert(widgets, Title{name = '[[Italian Rocket Championship|Italian Rocket Championship]] History'})
+			table.insert(widgets, Center{content = {_args.history_irc}})
+		end
+		if not String.isEmpty(_args.history_nl) then
+			table.insert(widgets, Title{name = '[[Nitro League|Nitro League]] History'})
+			table.insert(widgets, Center{content = {_args.history_nl}})
+		end
+		if not String.isEmpty(_args.history_tcs) then
+			table.insert(widgets, Title{name = '[[TCS eSports League|TCS eSports League]] History'})
+			table.insert(widgets, Center{content = {_args.history_tcs}})
+		end
+		if not String.isEmpty(_args.history_telia) then
+			table.insert(widgets, Title{name = '[[Telialigaen|Telialigaen]] History'})
+			table.insert(widgets, Center{content = {_args.history_telia}})
+		end
+		if not String.isEmpty(_args.history_svenska) then
+			table.insert(widgets, Title{name = '[[Svenska Raketligan|Svenska Raketligan]] History'})
+			table.insert(widgets, Center{content = {_args.history_svenska}})
+		end
+		if not String.isEmpty(_args.history_raket) then
+			table.insert(widgets, Title{name = '[[RaketLigaen|RaketLigaen]] History'})
+			table.insert(widgets, Center{content = {_args.history_raket}})
+		end
 	elseif id == 'role' then
 		return {
 			Cell{name = 'Current Role', content = {_args.role}},
